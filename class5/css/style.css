@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 /* === CSS RESET === */
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: helvetica, verdana, arial, sans-serif;
+ font-family: 'Roboto', sans-serif;
   font-size: 20px;
   background: url(/images/bg2.jpg);
 }
@@ -43,10 +44,10 @@ header {
   background-color: #F2F2F0;
   color: #111;
   padding: 1em;
-  width: 100vmax;
+  width: 100%;
   text-align: left;
   font-family: 'Bebas Neue', cursivef;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.65em;
   font-weight: 300;
   letter-spacing: .01em;
@@ -67,8 +68,10 @@ h1 {
   justify-content: space-between;
   width: 94%;
   margin: 0 5% 2.5%;
-  font-family: helvetica, verdana, arial, sans-serif;
+  /* font-family: helvetica, verdana, arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
   border-bottom: solid 1px #333;
+  position: relative;
 
 }
 
@@ -131,7 +134,7 @@ figure img {
 figcaption {
   text-align: center;
   color: #555;
-  font-family: helvetica, verdana, arial, sans-serif;
+  font-family: 'Roboto', sans-serif;;
   font-size: 14px;
   font-style: italic;
 }
@@ -153,7 +156,8 @@ article p {
   flex-flow: row wrap;
   flex-direction: column;
   margin: 0 5% 2.5%;
-  font-family: helvetica, verdana, arial, sans-serif;
+  /* font-family: helvetica, verdana, arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   line-height: 1.65em;
   font-weight: 300;
@@ -195,11 +199,11 @@ article img {
 
 section span {
   text-align: center;
-  padding: 0;
+  /* padding: 0;
   background: 0 0;
   border: 0;
-  outline: 0;
-  font-family: helvetica, verdana, arial, sans-serif;
+  outline: 0; */
+  font-family: 'Roboto', sans-serif;
   font-size: 11px;
   line-height: 1em;
   font-weight: 500;
@@ -219,11 +223,11 @@ section article {
 
 section h2 {
   text-align: center;
-  background: 0 0;
+  /* background: 0 0;
   border: 0;
-  outline: 0;
+  outline: 0; */
   font-weight: 400;
-  font-family: helvetica, verdana, arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0 5% 2.5%;
   ;
 
@@ -235,8 +239,7 @@ section.parent {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: 0 5% 2.5%;
-  ;
-  font-family: helvetica, verdana, arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
   line-height: 1.65em;
   font-weight: 300;
@@ -263,8 +266,8 @@ section.gallery {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  margin: 0 5% 2.5%;
-  font-family: helvetica, verdana, arial, sans-serif;
+  margin: 0 4% 2.5%;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -276,8 +279,11 @@ section.gallery {
 
 .gallery img {
   display: block;
-  width: 100%;
-  height: 40vh;
+
+  /* width: 100%;
+  height: 50vh; */
+  
+
 
 }
 
@@ -296,12 +302,8 @@ section.gallery {
 
 footer {
   background-color: #ffffff;
-  /* margin: 0;
-  padding: 0;
-  background: 0 0;
-  border: 0;
-  outline: 0; */
-  font-family: helvetica, verdana, arial, sans-serif;
+ 
+  font-family: Montserrat,sans-serif;
   font-weight: 500;
   color: #333;
   border-top: #ddd solid 10px;
