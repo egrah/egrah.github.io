@@ -72,13 +72,14 @@ h1 {
   /* font-family: helvetica, verdana, arial, sans-serif; */
   font-family: 'Roboto', sans-serif;
   border-bottom: solid 1px #333;
-  position: relative;
+  /* position: static; */
   color:#736B5C;
+
 
 }
 
 .banner nav {
-  width: 65%;
+  width: 70%;
 }
 
 nav a:link {
