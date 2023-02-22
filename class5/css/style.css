@@ -66,7 +66,7 @@ h1 {
 
   display: flex;
   text-transform: uppercase;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 94%;
   margin: 0 5% 2.5%;
   /* font-family: helvetica, verdana, arial, sans-serif; */
@@ -79,9 +79,9 @@ h1 {
 
 }
 
-.banner nav {
-  width: 65%;
-}
+/* .banner nav {
+  width: 96%;
+} */
 
 nav a:link {
   color: #333;
