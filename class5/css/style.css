@@ -73,9 +73,9 @@ h1 {
   font-family: 'Roboto', sans-serif;
   border-bottom: solid 1px #333;
   /* position: static; */
-  color:#736B5C;
+  color:#333;
+  position: fixed;
   
-
 
 }
 
@@ -95,7 +95,7 @@ nav a:link {
 
 
 nav a:visited {
-  color: #736B5C
+  color:#333
 }
 
 nav a:hover {
