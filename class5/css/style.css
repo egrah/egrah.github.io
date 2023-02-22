@@ -52,6 +52,7 @@ header {
   line-height: 1.65em;
   font-weight: 300;
   letter-spacing: .01em;
+ 
 
 }
 
@@ -74,7 +75,8 @@ h1 {
   border-bottom: solid 1px #333;
   /* position: static; */
   color:#333;
-  position: fixed;
+  position: absolute;
+  /* top: 0; */
   
 
 }
