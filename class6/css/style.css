@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* === CSS RESET === */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* adding padding or border will not increase its width */
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  background: url(/images/bg2.jpg);
+}
+
+h1,
+h2 {
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+#projects figcaption a {
+  font-style: normal;
+  color: black;
+  text-align: center;
+}
+
+#services .text img {
+  height: 70vh;
+  width: 85%;
+
+}
+
+#contact .text figure img {
+  height: 75vh;
+  width: 85%;
+
+}
+
+header {
+  background-color: #F2F2F0;
+  /* color: #111; */
+  color: #736B5C;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  font-family: 'Bebas Neue', cursivef;
+  font-size: 15px;
+  line-height: 1.65em;
+  font-weight: 300;
+  letter-spacing: .01em;
+ 
+
+}
+
+
+h1 {
+  font-size: 6em;
+  line-height: 90%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.banner {
+
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  width: 94%;
+  margin: 0 5% 2.5%;
+  /* font-family: helvetica, verdana, arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  border-bottom: solid 1px #333;
+  /* position: static; */
+  color:#333;
+  position: absolute;
+
+  
+
+}
+
+/* .banner nav {
+  width: 96%;
+} */
+
+nav a:link {
+  /* color: white; */
+  /* background: #ffffff; */
+  padding: .5em 1em;
+  text-decoration: none;
+  flex-grow: 1;
+  transition: background-color 0.5s ease-out;
+  
+
+}
+
+
+nav a:visited {
+  color:#333
+}
+
+nav a:hover {
+  /* background: #333; */
+  background-color: #D9D279;
+  font-size: 36px
+  
+  /* color: #eee; */
+}
+
+nav a:active {
+  color: #777;
+}
+
+nav a.current {
+  text-decoration: underline;
+  /* font-style: italic; */
+}
+
+
+article {
+  /* background: #98A62E; */
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+article h2 {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #333;
+}
+
+figure img {
+  height: auto;
+  width: 85%;
+  
+
+
+}
+
+
+figcaption {
+  text-align: center;
+  color: #555;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 14px;
+  font-style: italic;
+}
+
+article p {
+  margin-bottom: 1em;
+  line-height: 1.3em;
+}
+
+
+/* ===== TEXT SECTION INFO HERE ===== */
+.text {
+
+
+  width: 96%;
+  min-height: 87.5vh;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  margin: 0 5% 2.5%;
+  /* font-family: helvetica, verdana, arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.65em;
+  font-weight: 300;
+  letter-spacing: .03em;
+}
+
+
+
+.col {
+  column-count: 2;
+  /* column-rule: solid 1px #777; */
+  column-gap: 2em;
+  font-size: 17px;
+  line-height: 1.65em;
+  font-weight: 300;
+  letter-spacing: .03em;
+}
+
+.col h2 {
+  text-align: left;
+  font-size: 2em;
+}
+
+article h2 {
+  font-size: 42px;
+}
+
+article p {
+  margin-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+  margin-left: 5px;
+
+
+}
+
+
+section span {
+  text-align: center;
+  /* padding: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  line-height: 1em;
+  font-weight: 500;
+  letter-spacing: .25em;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 19px;
+  margin-bottom: 9px;
+
+}
+
+section article {
+  padding: 3em;
+
+}
+
+section h2 {
+  text-align: center;
+  /* background: 0 0;
+  border: 0;
+  outline: 0; */
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 5% 2.5%;
+  ;
+
+}
+
+section.parent {
+  /* padding: 5px; */
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 5% 2.5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.65em;
+  font-weight: 300;
+  letter-spacing: .03em;
+}
+
+.parent figure {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+
+}
+
+.parent img {
+  display: block;
+  width: 100%;
+
+}
+
+
+/* ==== gallery SECTION INFO ==== */
+
+section.gallery {
+  /* padding: 5px; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  margin: 0 4% 2.5%;
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+
+.gallery figure {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+
+}
+
+/* .gallery img {
+  display: block;
+
+
+} */
+.gallery img:hover {
+  opacity: 0;
+    transition: opacity .5s;
+
+}
+
+
+.gallery div figcaption {
+
+  text-align: center;
+  font-size: 15px;
+  text-align: left;
+  font-style: normal;
+
+}
+
+/* Article seection */
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+.image-container:hover img{
+  /* opacity: 0.5; 
+   transition: opacity 0.5s ease-in-out;  */
+   /* transform: scale(1);
+   transition: transform 3s cubic-bezier(.17,.05,.13,.85); */
+   animation: pulse 0.5s cubic-bezier(0.25,0.1,0.25,1);
+  
+
+}
+@keyframes pulse{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+
+
+footer {
+  background-color: #ffffff;
+ 
+  font-family: Montserrat,sans-serif;
+  font-weight: 500;
+  color: #333;
+  border-top: #ddd solid 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5em;
+  letter-spacing: 2.5px;
+}
