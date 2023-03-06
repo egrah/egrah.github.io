@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* === CSS RESET === */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* adding padding or border will not increase its width */
+}
+
+
+/* === MOBILE FIRST === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   background: url(/images/bg2.jpg);
+ }
+ 
+ h1,
+ h2 {
+   font-family: 'Bebas Neue', cursive;
+ 
+ }
+
+
+header {
+  background-color: #F2F2F0;
+  /* color: #111; */
+  color: #736B5C;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-family: 'Bebas Neue', cursivef;
+  font-size: 15px;
+  line-height: 1.65em;
+  font-weight: 300;
+  letter-spacing: .01em;
+ 
+
+
+}
+h1 {
+  font-size: 6em;
+  line-height: 90%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+
+/* Banner SECTION INFO */
+
+.banner {
+
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-evenly;
+  font-family: 'Roboto', sans-serif;
+  
+  color: #333;
+  padding: 20px;
+  font-size: 18px;
+
+}
+
+nav a:link {
+  
+
+  text-decoration: none;
+ 
+
+}
+
+
+nav a:visited {
+  color:#333
+}
+
+nav a:hover {
+  /* background: #333; */
+  background-color: #D9D279;
+  /* font-size: 36px */
+  
+  /* color: #eee; */
+}
+
+nav a:active {
+  color: #777;
+}
+
+nav a.current {
+  text-decoration: underline;
+  /* font-style: italic; */
+}
+
+
+
+figure {
+  margin: 20px;
+}
+
+figure img {
+  width:100%;
+}
+
+
+.text {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+section span {
+  text-align: center;
+  /* padding: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  line-height: 1em;
+  font-weight: 500;
+  letter-spacing: .25em;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 19px;
+  margin-bottom: 9px;
+
+}
+section h2 {
+  text-align: center;
+  /* background: 0 0;
+  border: 0;
+  outline: 0; */
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 5% 2.5%;
+  ;
+
+}
+.text_img:hover img{
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+
+
+/* ==== gallery SECTION INFO ==== */
+
+section.gallery {
+  /* padding: 5px; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  margin: 0 4% 2.5%;
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+
+.gallery figure {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+
+}
+.gallery img:hover {
+  opacity: 0;
+    transition: opacity .5s;
+
+}
+
+
+.gallery div figcaption {
+
+  text-align: center;
+  font-size: 15px;
+  text-align: left;
+  font-style: normal;
+
+}
+
+
+footer {
+  background-color: #ffffff;
+ 
+  font-family: Montserrat,sans-serif;
+  font-weight: 500;
+  color: #333;
+  border-top: #ddd solid 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5em;
+  letter-spacing: 2.5px;
+}
+
+
+
+/* === TABLET LAYOUT INHERITS FROM MOBILE 600PX 980PX === */
+@media only screen and (min-width: 600px) {
+  .parent {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  figure {
+    flex: 1 45%;
+    /* padding: 20px; */
+  }
+
+  .text {
+    column-count: 2;
+  }
+}
+
+
+/* === Desktop LAYOUT INHERITS FROM Tablet and Mobile > 980PX === */
+@media only screen and (min-width: 980px) {
+  figure {
+    flex: 1 20%;
+    /* padding: 20px; */
+  }
+
+  .text {
+    column-count: 3;
+  }
+
+}

@@ -1,0 +1,165 @@
+/* === GRID AREA NAME EXAMPLE === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  === MOBILE FIRST === */
+/* === DEFINE THE GRID AREAS === */
+.header {
+    grid-area: header;
+    color: #736B5C;
+}
+
+.banner {
+    grid-area: banner
+}
+.art_image{
+    grid-area: art_image
+}
+
+.content {
+    grid-area: content;
+}
+.gallary {
+    grid-area: gallary;
+   
+}
+
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+/*  === phone view FIRST === */
+section.parent {
+    background-color: #fff;
+    color: #444;
+    /* width: 100%; */
+    /* min-height: 70vh;
+    height: auto; */
+    /* height: 70vh; */
+    display: flex;
+    grid-gap: 20px;
+    grid-template-areas:
+        "header"
+        "banner"
+        "art_image"
+        "content"
+       " gallary"
+        "footer";
+    padding: 20px;
+}
+
+
+
+.banner {
+
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
+
+
+}
+
+nav a:link {
+
+    /* padding: 20px; */
+    text-decoration: none;
+
+    /* margin-left:1%; */
+    /* flex-grow: 1; */
+    /* transition: background-color 0.5s ease-out; */
+}
+
+nav a:visited {
+    color: #333
+}
+
+nav a:hover {
+    /* background: #333; */
+    background-color: #D9D279;
+    font-size: 36px
+        /* color: #eee; */
+}
+
+nav a:active {
+    color: #777;
+}
+
+nav a.current {
+    text-decoration: underline;
+    /* font-style: italic; */
+}
+
+figure img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+.art_title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.box gallery {
+    margin-bottom: 20px;
+}
+
+
+
+
+.box {
+    background: #eee;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/* ===================================== */
+/* === TABLET VIEW 600PX AND LARGER ===*/
+/* ===================================== */
+
+@media only screen and (min-width: 600px) {
+    section.parent {
+        grid-template-columns: 5fr 5fr;
+        grid-template-areas:
+            "header banner"
+            "art_image art_image"
+            "content content"
+            "gallary gallary"
+            "footer footer";
+        
+    }
+}
+
+
+/* ===================================== */
+/* === DESKTOP VIEW 980PX AND LARGER ===*/
+/* ===================================== */
+
+@media only screen and (min-width: 980px) {
+    section.parent {
+        grid-template-columns: 1fr 5fr 1.5fr; 
+        grid-template-areas:
+        "header header header"
+        "banner banner banner"
+        "art_image art_image art_image"
+        "content content content"
+        "gallary gallary gallary"
+        "footer footer footer";
+       
+    }
+}
+
