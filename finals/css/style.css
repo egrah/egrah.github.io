@@ -202,8 +202,9 @@ section.text-container {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url(/video/images/water.png) center center;
+  background: url(video/images/water.png) center center;
 }
+
 
 
 video.bgvid {
