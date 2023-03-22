@@ -13,7 +13,7 @@
 body {
  font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  background: url(/images/bg2.jpg);
+  background: url(/images/b.jpg);
 }
 
 h1,
@@ -132,6 +132,8 @@ nav a.current {
   text-decoration: underline;
   /* font-style: italic; */
 }
+
+
 
 
 article {
